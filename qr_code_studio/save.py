@@ -1,4 +1,4 @@
-from time import time
+from time import sleep
 import qrcode
 from pyzbar.pyzbar import decode
 from PIL import Image
@@ -16,3 +16,4 @@ def save_file(user_input, user_input_formatted, storage_path, storage_path_str):
 
         
         print('💾 QR Code saved to path: ', storage_path)
+        sleep(3)

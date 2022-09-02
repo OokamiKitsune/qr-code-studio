@@ -2,7 +2,7 @@ import os
 import generate
 import decode
 from pathlib import Path, PosixPath
-
+from time import sleep
 
 # This program generates a QR code using the inputs from the command line.
 
@@ -40,10 +40,13 @@ while True:
         print('Create a new QR Code!')
         user_input_formatted = ''
         user_input = input('⌨️  Enter data to store inside your new QR Code: ')
+
+        # User input checked for non alpha numeric characters.
         for character in user_input:
             if character.isalnum():
                 user_input_formatted += character
-        print(user_input_formatted)
+        print('File name will be: ' + user_input_formatted)
+        sleep(3)
                 
         # Function call to create QR
         generate.create_qr(storage_path, storage_path_str, user_input_formatted, user_input)
@@ -57,8 +60,6 @@ while True:
         image_file = input('Enter the location of the QR Code: ')
         
         # Fucntion call to decode a qr code
-        decode.decode(image_file)
+        decode.decode_qr(image_file)
 
-    else: 
-        print('\n' '⚠️ ' + user_option + ' is not a valid option.''\n')
 

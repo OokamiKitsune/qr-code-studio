@@ -6,6 +6,7 @@ import os
 
 
 def save_file(user_input, user_input_formatted, storage_path, storage_path_str):
+        '''Takes all input data and storage path and saves qr code image to the home directory.'''
         qr = qrcode.QRCode(version=1, box_size=5, border=3)
         qr.add_data(user_input)
 
@@ -17,3 +18,5 @@ def save_file(user_input, user_input_formatted, storage_path, storage_path_str):
         
         print('💾 QR Code saved to path: ', storage_path)
         sleep(3)
+
+        

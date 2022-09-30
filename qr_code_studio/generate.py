@@ -10,7 +10,7 @@ def create_qr(storage_path, storage_path_str, user_input_formatted, user_input):
     direct_path_to_image = (storage_path_str + '/' + user_input_formatted + '.png')
     try:
         if Path(direct_path_to_image).exists():
-            print('⚠️  File with name: ' + '\"'+ user_input_formatted +'\"' + ' exsists already')
+            print('⚠️  File with name: ' + '\"'+ user_input_formatted +'\"' + ' exsists already.')
             overwrite_file = input('Do you want to overwrite this file? (Y/N): ').strip().lower()
             
             if overwrite_file == 'y' or overwrite_file == 'yes':

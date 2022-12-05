@@ -12,8 +12,9 @@ cd to application directory where the poetrytoml file resides.
 # Install dependancies using poetry:
 poetry install
 
-# cd to qr_code_studio to run main.py
+# run app main.py
 cd qr_code_studio
+
 python3 main.py
 
 

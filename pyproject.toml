@@ -2,7 +2,7 @@
 name = "qr-code-studio"
 version = "0.1.0"
 description = ""
-authors = ["TFP <thefoxpaw@protonmail.com>"]
+authors = [""]
 
 [tool.poetry.dependencies]
 python = "^3.10"

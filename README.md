@@ -1,23 +1,24 @@
 # qr-code-studio
 This python3 CLI app generates qr codes and stores them in your home directory.  
 
-# How to use
+## How to use
 This python app uses poetry for managing dependencies.
 
-# Install poetry: 
+## Installing poetry 
 `curl -sSL https://install.python-poetry.org | python3 -`
-# cd to app directory
+
+## cd to app directory
 cd to application directory where the poetrytoml file resides.
 
-# Install dependancies using poetry:
+## Install dependancies using poetry:
 `poetry install`
 
-# run app main.py
+## run app main.py
 `cd qr_code_studio`
 
 `python3 main.py`
 
-If you are having an issue with pyzbar you may need to install the libzbar library 
+## If you are having an issue with pyzbar you may need to install the libzbar library 
 =======
 - On Unix/Linux:
 

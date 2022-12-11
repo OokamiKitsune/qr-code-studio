@@ -2,7 +2,7 @@
 This python3 CLI app generates qr codes and stores them in your home directory.  
 
 ## How to use
-This python app uses poetry for managing dependencies.
+Run python program in a venv. This python app uses poetry for managing dependencies.
 
 ## Installing poetry 
 `curl -sSL https://install.python-poetry.org | python3 -`
@@ -19,7 +19,7 @@ cd to application directory where the poetrytoml file resides.
 `python3 main.py`
 
 ## If you are having an issue with pyzbar you may need to install the libzbar library 
-=======
+
 - On Unix/Linux:
 
 `sudo apt-get install libzbar0`

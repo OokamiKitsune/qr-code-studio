@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "qr-code-studio"
 version = "0.1.0"
-description = ""
-authors = [""]
+description = "A simple CLI program that allows you to create QR codes"
+authors = ["Ookamikitsune"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 dearpygui = "^1.6.2"
 qrcode = "^7.3.1"
-Pillow = "^9.2.0"
+Pillow = "^9.3.0"
 pyzbar = "^0.1.9"
 qrcode-term = "^0.0.1"
 

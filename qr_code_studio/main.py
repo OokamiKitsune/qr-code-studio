@@ -21,8 +21,8 @@ try:
         print('Storage path created here: ' + storage_path_str)
     else:
         # If path already exsists, tell user. 
-        print('Storage path already created!')
-        sleep(3)
+        print('✅ Storage path already created!')
+        sleep(1.5)
 except OSError as error :
     print(error)
     print('There was an error creating the storage directory ' + storage_path_str + '\nApplication needs permission to create a directory in order to save QR codes' '\nAppliction will still run but may be unable to save QR codes.')
@@ -58,7 +58,7 @@ while True:
 
         # Print QR code preview to terminal
         if user_input == "":
-            pass
+            break
 
         else:
             print (f'🎉 Here is a preview of your {user_input} QR Code!')
@@ -67,14 +67,23 @@ while True:
 
     
     if user_option == '2':
-            
-        print('Decode a QR Code.\n' + 'Path to look for images is: ' + storage_path_str)
+        print("!!Feature NYI!!")
+        print('Decode a QR Code.\n' + 'Path to look for images is: ' + storage_path_str + '\n' + 'Files in this directory: ')
         # // TODO Implement the decode function
+        # List all files to the user
+        list_files = os.listdir(storage_path)
+        counter = 0
+        for file in list_files:
+            file_path =Path.cwd
+            counter += 1
+            print('> ' + file)
         
+        number_files = str(counter)    
+        print('Total files: ' + number_files)
         image_file = input('Enter the location of the QR Code: ')
-        full_image_path = storage_path_str + image_file
+        full_image_path = storage_path_str +  image_file
         
         # Fucntion call to decode a qr code
-        decode.decode_qr(image_file)
+        decode.decode_qr(image_file, storage_path)
 
 
